@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBM Watson Text to Speech w/ Word Timings</title>
+</head>
+<body>
+<h1>IBM Watson Text to Speech w/ Word Timings</h1>
+
+<p><textarea id="text" rows="5" cols="80">Watson (computer)
+From Wikipedia, the free encyclopedia.
+
+Watson is a question answering computer system capable of answering questions posed in natural language, developed in IBM's DeepQA project by a research team led by principal investigator David Ferrucci.
+Watson was named after IBM's first CEO and industrialist Thomas J. Watson.
+The computer system was specifically developed to answer questions on the quiz show Jeopardy!.
+In 2011, Watson competed on Jeopardy! against former winners Brad Rutter and Ken Jennings.
+Watson received the first place prize of $1 million.
+</textarea></p>
+<p><button id="server">Synthesize and process server-side</button> or <button id="client">Synthesize and process client-side</button></p>
+
+<h2>Output for client-side processing:</h2>
+<p id="output"></p>
+
+<hr/>
+
+<h2>Notes</h2>
+
+<p>Word Timings provided by the Watson Speech to Text service, essentially playing an automated game of telephone with the Text to Speech service.
+    It's admittedly a bit crazy, but it does work.</p>
+
+<p>Both options will play the audio and then log word timings to the console.</p>
+
+<h3>Server-side processing</h3>
+<ul>
+    <li>Uses less client bandwidth, but uses significantly more server-side bandwidth</li>
+    <li>Allows for the audio to be captured and saved</li>
+    <li>Can provide faster-than-realtime results</li>
+    <li>Does not expose auth tokens (more secure)</li>
+</ul>
+
+<h3>Client-side processing</h3>
+<ul>
+    <li>Offers easy, built-in html output</li>
+    <li>Uses more client bandwidth (to upload audio), but uses almost no server resources</li>
+    <li>May provide slightly degraded results due to additional lossy audio conversions on the client side</li>
+    <li>More limited browser support</li>
+</ul>
+
+<p><a href="https://github.com/nfriedly/tts-timing">View the source on GitHub</a></p>
+
+<script src="/bundle.js"></script>
+</body>
+</html>
