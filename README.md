@@ -8,8 +8,8 @@ Try it out at https://watson-tts-timing.mybluemix.net/ or click the button below
 
 ### Local setup
 
- Create a file named [`.env`] and give it credentials for the Watson Speech to Text and Text to Speech services. 
-(Create a [Bluemix] account create a server instance, create Watson Speech to Text and Text to Speech instances, bind them to the server, then click show credentials.)
+ Create a file named [.env] and give it credentials for the Watson Speech to Text and Text to Speech services. 
+(To retrieve credentials, create a [Bluemix] server instance, bind Watson Speech to Text and Text to Speech instances to it, then click show credentials.)
 
 ```
 STT_USERNAME="..."
