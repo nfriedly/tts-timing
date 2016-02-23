@@ -2,7 +2,7 @@
 
 A fairly ridiculous way to get word timings with the Watson Text to Speech service.
 
-Try it out at https://watson-tts-timing.mybluemix.net/
+Try it out at https://watson-tts-timing.mybluemix.net/ or click the button below to spin up your own copy:
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/nfriedly/tts-timing)
 
@@ -20,7 +20,7 @@ TTS_PASSWORD="..."
 
 ### Server setup
 
-It should work out-of-the box on a bluemix server with the Watson Speech services bound to it.
+It should work out-of-the box with the Deploy to Bluemix button.
 
 [.env]: https://www.npmjs.com/package/dotenv
 [Bluemix]: https://console.ng.bluemix.net/
